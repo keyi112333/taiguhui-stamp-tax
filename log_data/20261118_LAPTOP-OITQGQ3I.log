@@ -1,0 +1,71 @@
+2026-11-18 15:08:55,604 - logger - INFO - 会计期间已更新：印花税计算底稿!D4
+2026-11-18 15:08:55,607 - logger - INFO - 会计期间已更新：租赁!C4
+2026-11-18 15:08:55,607 - logger - INFO - 会计期间已更新：收入类!C4
+2026-11-18 15:10:49,646 - logger - WARNING - 全量重算失败，改用常规重算：(-536870910, 'OLE error 0xe0000002', None, None)
+2026-11-18 15:10:50,883 - logger - INFO - 已复制模板并由 Excel.Application 写入明细：C:\Users\杨可怡\AppData\Local\Temp\stamp_tax_com_kg38_i8d\印花税计税表 太古汇 202610.xlsx
+2026-11-18 15:12:07,582 - logger - WARNING - Excel 不可用，改用 openpyxl 更新单元格：Excel 无法打开 C:\Users\杨可怡\AppData\Local\Temp\stamp_tax_com_kg38_i8d\印花税计税表 太古汇 202610.xlsx：Open 未返回工作簿
+2026-11-18 15:13:31,010 - logger - WARNING - Excel 不可用，改用 openpyxl 更新单元格：Excel 无法打开 C:\Users\杨可怡\AppData\Local\Temp\stamp_tax_com_kg38_i8d\印花税计税表 太古汇 202610.xlsx：Open 未返回工作簿
+2026-11-18 15:16:42,782 - logger - WARNING - Excel 不可用，改用 openpyxl 更新单元格：Excel 无法打开 C:\Users\杨可怡\AppData\Local\Temp\stamp_tax_com_kg38_i8d\印花税计税表 太古汇 202610.xlsx：Open 未返回工作簿
+2026-11-18 15:18:05,700 - logger - WARNING - 全量重算失败，改用常规重算：(-536870910, 'OLE error 0xe0000002', None, None)
+2026-11-18 15:18:07,321 - logger - INFO - 已由 Excel.Application 写入 3 个单元格：C:\Users\杨可怡\AppData\Local\Temp\stamp_fresh_vca666e2\印花税计税表 太古汇 202610.xlsx
+2026-11-18 15:18:07,321 - logger - INFO - 会计期间已更新：印花税计算底稿!D4
+2026-11-18 15:18:07,321 - logger - INFO - 会计期间已更新：租赁!C4
+2026-11-18 15:18:07,322 - logger - INFO - 会计期间已更新：收入类!C4
+2026-11-18 15:21:00,052 - logger - WARNING - Excel 不可用，改用 openpyxl 更新单元格：Excel 无法打开 C:\Users\杨可怡\AppData\Local\Temp\stamp_fresh_vca666e2\印花税计税表 太古汇 202610.xlsx：Open 未返回工作簿
+2026-11-18 15:24:32,555 - logger - WARNING - 全量重算失败，改用常规重算：(-536870910, 'OLE error 0xe0000002', None, None)
+2026-11-18 15:24:33,178 - logger - INFO - 已复制模板并由 Excel.Application 写入明细：C:\Users\杨可怡\AppData\Local\Temp\stamp_full_cgyd_qxu\印花税计税表 太古汇 202610.xlsx
+2026-11-18 15:24:33,178 - logger - INFO - 会计期间已更新：印花税计算底稿!D4
+2026-11-18 15:24:33,178 - logger - INFO - 会计期间已更新：租赁!C4
+2026-11-18 15:24:33,180 - logger - INFO - 会计期间已更新：收入类!C4
+2026-11-18 15:25:01,471 - logger - WARNING - Excel 不可用，改用 openpyxl 更新单元格：Excel 无法打开 C:\Users\杨可怡\AppData\Local\Temp\stamp_full_cgyd_qxu\印花税计税表 太古汇 202610.xlsx：Open 未返回工作簿
+2026-11-18 15:28:18,805 - logger - WARNING - 全量重算失败，改用常规重算：(-536870910, 'OLE error 0xe0000002', None, None)
+2026-11-18 15:28:19,308 - logger - INFO - 已复制模板并由 Excel.Application 写入明细并保存：C:\Users\杨可怡\AppData\Local\Temp\stamp_session_eyo0d_hj\印花税计税表 太古汇 202610.xlsx
+2026-11-18 15:28:19,308 - logger - INFO - 会计期间已更新：印花税计算底稿!D4
+2026-11-18 15:28:19,308 - logger - INFO - 会计期间已更新：租赁!C4
+2026-11-18 15:28:19,309 - logger - INFO - 会计期间已更新：收入类!C4
+2026-11-18 15:33:33,945 - logger - WARNING - 全量重算失败，改用常规重算：(-536870910, 'OLE error 0xe0000002', None, None)
+2026-11-18 15:33:35,866 - logger - INFO - 已复制模板并由 Excel.Application 写入明细并保存：C:\Users\杨可怡\AppData\Local\Temp\stamp_it_1pky81bp\印花税计税表 太古汇 202610.xlsx
+2026-11-18 15:33:35,866 - logger - INFO - 会计期间已更新：印花税计算底稿!D4
+2026-11-18 15:33:35,866 - logger - INFO - 会计期间已更新：租赁!C4
+2026-11-18 15:33:35,866 - logger - INFO - 会计期间已更新：收入类!C4
+2026-11-18 15:36:43,733 - logger - WARNING - 全量重算失败，改用常规重算：(-536870910, 'OLE error 0xe0000002', None, None)
+2026-11-18 15:36:44,173 - logger - INFO - 已复制模板并由 Excel.Application 写入明细并保存：C:\Users\杨可怡\AppData\Local\Temp\stamp_it_ivmtpvk6\印花税计税表 太古汇 202610.xlsx
+2026-11-18 15:36:44,173 - logger - INFO - 会计期间已更新：印花税计算底稿
+2026-11-18 15:36:44,173 - logger - INFO - 会计期间已更新：租赁
+2026-11-18 15:36:44,173 - logger - INFO - 会计期间已更新：收入类
+2026-11-18 15:42:28,361 - logger - INFO - 已复制模板并由 Excel.Application 写入明细并保存：C:\Users\杨可怡\AppData\Local\Temp\stamp_it_z4qubtp2\印花税计税表 太古汇 202610.xlsx
+2026-11-18 15:42:28,362 - logger - INFO - 会计期间已更新：印花税计算底稿
+2026-11-18 15:42:28,362 - logger - INFO - 会计期间已更新：租赁
+2026-11-18 15:42:28,363 - logger - INFO - 会计期间已更新：收入类
+2026-11-18 16:03:22,849 - logger - INFO - JDE明细账 已写入明细账 3 行
+2026-11-18 16:04:13,595 - logger - INFO - JDE明细账 已写入明细账 3 行
+2026-11-18 16:04:13,905 - logger - INFO - 印花税计算底稿!D4 已更新“会计期间：”为 2026-10-01
+2026-11-18 16:04:13,998 - logger - INFO - 租赁!C4 已更新“会计期间：”为 2026-10-01
+2026-11-18 16:04:14,135 - logger - INFO - 收入类!C4 已更新“会计期间：”为 2026-10-01
+2026-11-18 16:04:14,672 - logger - INFO - 已复制模板并由 Excel.Application 写入明细并保存：C:\Users\杨可怡\AppData\Local\Temp\stamp_tax_smoke\太古汇 2501\印花税计税表 太古汇 202610.xlsx
+2026-11-18 16:04:26,089 - logger - INFO - 印花税计算底稿 第 31 行借贷金额均为 0，跳过
+2026-11-18 16:04:26,330 - logger - INFO - 印花税计算底稿!D5 已更新“批号：”为 999999
+2026-11-18 16:04:26,430 - logger - INFO - 租赁!C6 已更新“批号：”为 999999
+2026-11-18 16:04:26,577 - logger - INFO - 收入类!C5 已更新“批号：”为 999999
+2026-11-18 16:04:27,043 - logger - INFO - JDE 批号 999999 已回写：印花税计算底稿、租赁、收入类
+2026-11-18 16:10:43,539 - logger - INFO - JDE明细账 已写入明细账 3 行
+2026-11-18 16:10:43,846 - logger - INFO - 印花税计算底稿!D4 已更新“会计期间：”为 2026-10-01
+2026-11-18 16:10:43,942 - logger - INFO - 租赁!C4 已更新“会计期间：”为 2026-10-01
+2026-11-18 16:10:44,133 - logger - INFO - 收入类!C4 已更新“会计期间：”为 2026-10-01
+2026-11-18 16:10:44,497 - logger - INFO - 已复制模板并由 Excel.Application 写入明细并保存：C:\Users\杨可怡\AppData\Local\Temp\stamp_tax_smoke\太古汇 2501\印花税计税表 太古汇 202610.xlsx
+2026-11-18 16:10:55,516 - logger - INFO - 印花税计算底稿 第 31 行借贷金额均为 0，跳过
+2026-11-18 16:10:55,802 - logger - INFO - 印花税计算底稿!D5 已更新“批号：”为 999999
+2026-11-18 16:10:55,934 - logger - INFO - 租赁!C6 已更新“批号：”为 999999
+2026-11-18 16:10:56,189 - logger - INFO - 收入类!C5 已更新“批号：”为 999999
+2026-11-18 16:10:56,770 - logger - INFO - JDE 批号 999999 已回写：印花税计算底稿、租赁、收入类
+2026-11-18 16:14:08,043 - logger - INFO - JDE明细账 已写入明细账 12920 行
+2026-11-18 16:14:08,416 - logger - INFO - 印花税计算底稿!D4 已更新“会计期间：”为 2026-10-01
+2026-11-18 16:14:08,540 - logger - INFO - 租赁!C4 已更新“会计期间：”为 2026-10-01
+2026-11-18 16:14:08,710 - logger - INFO - 收入类!C4 已更新“会计期间：”为 2026-10-01
+2026-11-18 16:15:27,354 - logger - INFO - 已复制模板并由 Excel.Application 写入明细并保存：C:\Users\杨可怡\AppData\Local\Temp\stamp_tax_scale\太古汇 2501\印花税计税表 太古汇 202610.xlsx
+2026-11-18 16:15:45,001 - logger - INFO - 印花税计算底稿 第 31 行借贷金额均为 0，跳过
+2026-11-18 16:15:45,481 - logger - INFO - 印花税计算底稿!D5 已更新“批号：”为 888888
+2026-11-18 16:15:45,729 - logger - INFO - 租赁!C6 已更新“批号：”为 888888
+2026-11-18 16:15:45,992 - logger - INFO - 收入类!C5 已更新“批号：”为 888888
+2026-11-18 16:15:46,480 - logger - INFO - JDE 批号 888888 已回写：印花税计算底稿、租赁、收入类
+2026-11-18 16:18:23,614 - logger - INFO - 运行参数：凭据=JDE 账号=user 公司=02501 共享盘=C:\Users\杨可怡\AppData\Local\Temp\stamp_prepare\太古汇 2501 数据源=C:\Users\杨可怡\AppData\Local\Temp\stamp_prepare\out\太古汇 2501 202610
