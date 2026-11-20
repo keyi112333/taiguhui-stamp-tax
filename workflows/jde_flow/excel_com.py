@@ -161,12 +161,17 @@ class ExcelSession:
         return sheet
 
     def write_ledger(self, sheet_name, header_row, column_pairs, rows):
-        """按列映射写入明细账，保留模板其他列与行格式。"""
+        """按列映射写入明细账，保留模板其他列与行格式。
+
+        模板数据区可能带自动筛选，被筛掉的行处于隐藏状态；先取消筛选并显示
+        全部行，再写入，避免新数据被隐藏或清空不彻底。标题行保持不动。
+        """
         if not rows:
             raise ConfigError("明细账没有数据，未生成输出")
         sheet = self.sheet(sheet_name)
         used = sheet.UsedRange
         last_row = max(used.Row + used.Rows.Count - 1, header_row)
+        self._remove_filters(sheet, header_row, last_row)
         # 只清映射列的历史数据，保持模板其他列（公式等）不动。
         for target_col, _ in column_pairs:
             self._clear_column(sheet, target_col, header_row + 1, last_row)
@@ -198,6 +203,21 @@ class ExcelSession:
             self.app.CutCopyMode = False
             extra.EntireRow.RowHeight = first.EntireRow.RowHeight
         logger.info(f"{sheet_name} 已写入明细账 {len(rows)} 行")
+
+    def _remove_filters(self, sheet, header_row, last_row):
+        """取消工作表自动筛选并显示数据区所有行；标题行保持原样。"""
+        try:
+            if sheet.FilterMode:
+                sheet.ShowAllData()
+            if sheet.AutoFilterMode:
+                sheet.AutoFilterMode = False
+        except Exception as exc:
+            logger.warning(f"{sheet.Name} 取消失效筛选失败：{exc}")
+        if last_row > header_row:
+            try:
+                sheet.Rows(f"{header_row + 1}:{last_row}").Hidden = False
+            except Exception as exc:
+                logger.warning(f"{sheet.Name} 显示被筛选隐藏的行失败：{exc}")
 
     def _clear_column(self, sheet, column, first_row, last_row):
         """按块清空一列的数据区；一次性清空整列时 COM 可能静默不生效。"""
@@ -283,6 +303,10 @@ class ExcelSession:
 
 def _write_rows_with_openpyxl(sheet, header_row, column_pairs, rows):
     columns = sorted({col for col, _ in column_pairs})
+    # 去掉模板数据区的自动筛选，并显示被筛掉的行，与 Excel 写入保持一致。
+    sheet.auto_filter.ref = None
+    for row in range(header_row + 1, sheet.max_row + 1):
+        sheet.row_dimensions[row].hidden = False
     # 保存首条明细格式，扩展新行时延续日期、金额等显示格式。
     styles = {col: copy(sheet.cell(header_row + 1, col)._style) for col in columns}
     for col in columns:
